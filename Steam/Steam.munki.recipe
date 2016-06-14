@@ -3,13 +3,13 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Import the latest version of Discord into Munki.</string>
+    <string>Import the Steam client into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.aaronburchfield.munki.discord</string>
+    <string>com.github.aaronburchfield.munki.steam</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>Discord</string>
+      <string>Steam</string>
       <key>MUNKI_REPO_SUBDIR</key>
       <string>apps</string>
       <key>pkginfo</key>
@@ -19,11 +19,11 @@
           <string>testing</string>
         </array>
         <key>category</key>
-        <string>Communication</string>
+        <string>Games</string>
         <key>description</key>
-        <string>All-in-one voice and text chat for gamers that’s free, secure, and works on both your desktop and phone.</string>
+        <string>Play, connect, create and more.</string>
         <key>display_name</key>
-        <string>Discord</string>
+        <string>Steam</string>
         <key>name</key>
         <string>%NAME%</string>
         <key>unattended_install</key>
@@ -33,7 +33,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.aaronburchfield.download.discord</string>
+    <string>com.github.aaronburchfield.download.steam</string>
     <key>Process</key>
     <array>
       <dict>
