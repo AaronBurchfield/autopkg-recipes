@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Description</key>
+    <string>Download Pritunl OpenVPN client.</string>
+    <key>Identifier</key>
+    <string>com.github.aaronburchfield.download.pritunl</string>
+    <key>Input</key>
+    <dict>
+      <key>NAME</key>
+      <string>Pritunl</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.4.1</string>
+    <key>Process</key>
+    <array>
+      <dict>
+        <key>Processor</key>
+        <string>GitHubReleasesInfoProvider</string>
+        <key>Arguments</key>
+        <dict>
+          <key>sort_by_highest_tag_names</key>
+          <true/>
+          <key>asset_regex</key>
+          <string>^Pritunl.pkg.zip$</string>
+          <key>github_repo</key>
+          <string>pritunl/pritunl-client-electron</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>EndOfCheckPhase</string>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>URLDownloader</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
